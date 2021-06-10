@@ -26,6 +26,9 @@
         }
     },
     "rules": {
+        "semi": ["error", "never"],
+        "indent": ["error", 4, {"ignoredNodes": ["JSXElement"]}],
+        "react/jsx-indent": ["error", 4],
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
         "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
@@ -43,5 +46,17 @@
                 "tsx": "never"
             }
         ]
-    }
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.spec.js",
+                "**/*.spec.jsx",
+                "**/*.test.tsx"
+            ],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
 }
