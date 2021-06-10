@@ -1,0 +1,26 @@
+.trailer-actions {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+    justify-content: center;
+
+    div {
+        margin-right: 1rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        border: 2px solid #a9a9ce;
+        color: #575786;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .close button {
+        color: #ff5858;
+        border: 2px solid #ff5858;
+    }
+}

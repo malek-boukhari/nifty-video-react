@@ -1,8 +1,13 @@
 import React from 'react'
+import NvHeader from './NvHeader'
+import NvFooter from './NvFooter'
 
 function NvLayout() {
     return (
-        <div>hello world</div>
+        <div>
+            <NvHeader />
+            <NvFooter />
+        </div>
     )
 }
 
