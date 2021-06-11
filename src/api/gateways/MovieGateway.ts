@@ -10,7 +10,7 @@ export default class MovieGateway {
 
     public constructor(
         @inject(SERVICE_IDENTIFIER.HTTP_CLIENT)
-        private httpClient: HttpClient,
+        private httpClient: HttpClient
     ) {
         //
     }
@@ -29,7 +29,7 @@ export default class MovieGateway {
 
     public async fetchTrailer(id: number): Promise<AxiosResponse> {
         return this.httpClient.instance.get(
-            `${this.resource}/movie/${id}/videos?api_key=${this.httpClient.apiKey}`,
+            `${this.resource}/movie/${id}/videos?api_key=${this.httpClient.apiKey}`
         )
     }
 }

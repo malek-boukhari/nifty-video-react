@@ -15,7 +15,7 @@ export default class HttpClient {
         this.instance = axios.create({
             baseURL: this.baseURL,
             headers: { Accept: 'application/json' },
-            timeout: (process.env.TIMEOUT || 1000) as number,
+            timeout: (process.env.TIMEOUT || 1000) as number
         })
     }
 }

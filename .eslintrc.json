@@ -32,6 +32,7 @@
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": "error",
         "indent": ["error", 4, {"ignoredNodes": ["JSXElement"]}],
+        "comma-dangle": ["error", "never"],
         "react/jsx-indent": ["error", 4],
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],

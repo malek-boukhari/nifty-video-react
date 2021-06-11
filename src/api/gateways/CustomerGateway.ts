@@ -9,7 +9,7 @@ export default class CustomerGateway {
 
     public constructor(
         @inject(SERVICE_IDENTIFIER.HTTP_CLIENT)
-        private httpClient: HttpClient,
+        private httpClient: HttpClient
     ) {
         //
     }
